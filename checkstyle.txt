@@ -1,0 +1,4 @@
+Starting audit...
+[ERROR] C:\Users\Eduardo\TEMA_POO22\proiect2\.\src\utilsprocess\UtilsProcess.java:221:53: Parameter santaBudget should be final. [FinalParameters]
+Audit done.
+Checkstyle ends with 1 errors.

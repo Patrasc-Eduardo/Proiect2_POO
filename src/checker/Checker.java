@@ -19,6 +19,7 @@ public class Checker {
     private static final int LARGE_TEST_END = 29;
     private static final int LARGE_TEST_SCORE = 3;
     private static final int FINAL_TEST_SCORE = 4;
+
     protected Checker() {
 
     }
@@ -121,5 +122,18 @@ public class Checker {
             return LARGE_TEST_SCORE;
         }
         return FINAL_TEST_SCORE;
+    }
+
+    /**
+     * @param directory
+     */
+    public static void deleteFiles(final File[] directory) {
+        if (directory != null) {
+            for (File file : directory) {
+                if (!file.delete()) {
+                    System.out.println("nu s-a sters");
+                }
+            }
+        }
     }
 }
