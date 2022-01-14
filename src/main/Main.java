@@ -72,7 +72,7 @@ public final class Main {
         // TODO add here the entry point to your implementation
 
         System.out.println(input);
-        //ProcessInput processInput = new ProcessInput();
-        //processInput.init(input, filePath2);
+        ProcessInput processInput = new ProcessInput();
+        processInput.init(input, filePath2);
     }
 }

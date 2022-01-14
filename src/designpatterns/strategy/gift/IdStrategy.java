@@ -11,6 +11,6 @@ public class IdStrategy implements GiftStrategy{
 
     @Override
     public void sendGifts(MainDB mainDB, Double santaBudget) {
-        UtilsProcess.sendGifts(mainDB, santaBudget);
+        UtilsProcess.sendGifts(mainDB, mainDB.getChildrenList(), santaBudget);
     }
 }

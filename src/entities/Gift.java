@@ -1,10 +1,12 @@
 package entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 public final class Gift {
   private final String productName;
   private final Double price;
   private final String category;
-  private int quantity;
+  @JsonIgnore private int quantity;
 
   public Gift(
       final String productName, final Double price, final String category, final int quantity) {

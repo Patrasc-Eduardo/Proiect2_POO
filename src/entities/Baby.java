@@ -18,6 +18,8 @@ public final class Baby extends Child implements AverageScoreStrategy {
     this.setGiftsPreferences(ch.getGiftsPreferences());
     this.setNiceScoreHistory(ch.getNiceScoreHistory());
     this.setReceivedGifts(ch.getReceivedGifts());
+    this.setNiceScoreBonus(ch.getNiceScoreBonus());
+    this.setElf(ch.getElf());
   }
 
   @Override

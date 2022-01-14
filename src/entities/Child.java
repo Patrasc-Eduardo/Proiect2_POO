@@ -13,8 +13,8 @@ public class Child implements AverageScoreStrategy {
   private String city;
   private int age;
   private ArrayList<String> giftsPreferences;
-  private Double niceScoreBonus;
-  private String elf;
+  @JsonIgnore private Double niceScoreBonus;
+  @JsonIgnore private String elf;
   private Double averageScore;
   private ArrayList<Double> niceScoreHistory = new ArrayList<>();
   @JsonIgnore private Double niceScore;
@@ -36,14 +36,13 @@ public class Child implements AverageScoreStrategy {
     this.city = city;
     this.lastName = lastName;
     this.firstName = firstName;
-    //this.giftsPreferences = giftsPreferences;
+    // this.giftsPreferences = giftsPreferences;
     this.niceScore = niceScore;
     this.niceScoreHistory.add(niceScore);
     this.niceScoreBonus = niceScoreBonus;
     this.elf = elf;
-
     this.giftsPreferences =
-            (ArrayList<String>) giftsPreferences.stream().distinct().collect(Collectors.toList());
+        (ArrayList<String>) giftsPreferences.stream().distinct().collect(Collectors.toList());
   }
 
   public Child(
@@ -204,41 +203,59 @@ public class Child implements AverageScoreStrategy {
    * @param budgetUnit
    */
   public void calculateAssignedBudget(final Double budgetUnit) {
+
     if (averageScore != null && budgetUnit != null) {
       assignedBudget = averageScore * budgetUnit;
     }
 
-    if (elf.compareTo("black") == 0){
-      assignedBudget -= assignedBudget * (30.0 / 100.0);
-    }
+    if (elf != null) {
 
-    if (elf.compareTo("pink") == 0){
-      assignedBudget += assignedBudget * (30.0 / 100.0);
+      if (elf.compareTo("black") == 0) {
+        assignedBudget = assignedBudget - assignedBudget * 30.0 / 100.0;
+      }
+
+      if (elf.compareTo("pink") == 0) {
+        assignedBudget = assignedBudget + assignedBudget * 30.0 / 100.0;
+      }
     }
   }
 
   @Override
-  public void calculateAvgScore() {
-
-  }
+  public void calculateAvgScore() {}
 
   @Override
   public String toString() {
-    return "Child{" +
-            "id=" + id +
-            ", lastName='" + lastName + '\'' +
-            ", firstName='" + firstName + '\'' +
-            ", city='" + city + '\'' +
-            ", age=" + age +
-            ", giftsPreferences=" + giftsPreferences +
-            ", niceScoreBonus=" + niceScoreBonus +
-            ", elf='" + elf + '\'' +
-            ", averageScore=" + averageScore +
-            ", niceScoreHistory=" + niceScoreHistory +
-            ", niceScore=" + niceScore +
-            ", assignedBudget=" + assignedBudget +
-            ", receivedGifts=" + receivedGifts +
-            '}';
+    return "Child{"
+        + "id="
+        + id
+        + ", lastName='"
+        + lastName
+        + '\''
+        + ", firstName='"
+        + firstName
+        + '\''
+        + ", city='"
+        + city
+        + '\''
+        + ", age="
+        + age
+        + ", giftsPreferences="
+        + giftsPreferences
+        + ", niceScoreBonus="
+        + niceScoreBonus
+        + ", elf='"
+        + elf
+        + '\''
+        + ", averageScore="
+        + averageScore
+        + ", niceScoreHistory="
+        + niceScoreHistory
+        + ", niceScore="
+        + niceScore
+        + ", assignedBudget="
+        + assignedBudget
+        + ", receivedGifts="
+        + receivedGifts
+        + '}';
   }
-
 }

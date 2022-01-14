@@ -13,8 +13,12 @@ public final class MainDB {
   private final Santa santa = new Santa();
   private ArrayList<Child> childrenList = new ArrayList<>();
   private ArrayList<City> citiesList = new ArrayList<>();
+  //private HashMap<City, Double> citiesAndAvg = new HashMap<>();
 
-  private MainDB() {}
+
+  private MainDB() {
+
+  }
 
   /** @return instanta bazei de date de tip Singleton. */
   public static MainDB getInstance() {
@@ -25,27 +29,46 @@ public final class MainDB {
   }
 
   public void makeCitiesList() {
-    Set<City> cities = new HashSet<City>();
+    //Set<City> cities = new HashSet<City>();
+
+//    for(Child ch : childrenList) {
+//      cities.add(new City(ch.getCity(), 0.0));
+//    }
 
     for(Child ch : childrenList) {
-      cities.add(getCityByName(ch.getCity()));
+      if (getCityByName(ch.getCity()) == null) {
+        citiesList.add(new City(ch.getCity(), 0.0));
+      }
     }
+    //System.out.println("City set " + cities);
 
-    for(City city : cities) {
-      city.calculateAvgScore(childrenList);
-      citiesList.add(city);
+    for(City city : citiesList) {
+
+      if (city != null) {
+        city.calculateAvgScore(childrenList);
+        //citiesList.add(city);
+      }
+
     }
 
   }
 
-  public HashMap<String, Double> citiesToMap(){
-    HashMap<String, Double> map = new HashMap<>();
+  public HashMap<City, Double> citiesToMap(){
+    HashMap<City, Double> map = new HashMap<>();
 
     for(City city : citiesList){
-      map.put(city.getName(), city.getAverageScore());
+      map.put(city, city.getAverageScore());
     }
 
     return map;
+  }
+
+  public ArrayList<City> getCitiesList() {
+    return citiesList;
+  }
+
+  public void setCitiesList(ArrayList<City> citiesList) {
+    this.citiesList = citiesList;
   }
 
   public HashMap<Child, Double> childAvgMap() {

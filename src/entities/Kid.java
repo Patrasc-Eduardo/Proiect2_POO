@@ -13,6 +13,8 @@ public final class Kid extends Child {
     this.setGiftsPreferences(ch.getGiftsPreferences());
     this.setNiceScoreHistory(ch.getNiceScoreHistory());
     this.setReceivedGifts(ch.getReceivedGifts());
+    this.setNiceScoreBonus(ch.getNiceScoreBonus());
+    this.setElf(ch.getElf());
   }
 
   /** Calculeaza average score ca o medie aritmetica. */
@@ -29,10 +31,10 @@ public final class Kid extends Child {
     if (Double.compare(nr, 0.0) == 0 || Double.compare(sum, 0.0) == 0) {
       this.setAverageScore(getNiceScore());
     }
-    Double avg = sum / nr;
-
+    double avg = (double) sum / nr;
+    System.out.println("************************** Nice score bonus = " + this.getNiceScoreBonus());
     if (Double.compare(this.getNiceScoreBonus(), 0.0) != 0) {
-      avg += avg * (this.getNiceScoreBonus() / 100);
+      avg += avg * this.getNiceScoreBonus() / 100;
     }
 
     if (Double.compare(avg, 10.0) > 0) {
