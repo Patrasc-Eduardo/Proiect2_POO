@@ -2,531 +2,389 @@
   "annualChildren" : [ {
     "children" : [ {
       "id" : 0,
-      "lastName" : "Popa",
-      "firstName" : "Diana",
-      "city" : "Craiova",
-      "age" : 16,
-      "giftsPreferences" : [ "Technology", "Toys" ],
-      "averageScore" : 5.5,
-      "niceScoreHistory" : [ 5.0 ],
-      "assignedBudget" : 83.74060150375941,
-      "receivedGifts" : [ {
-        "productName" : "Castle",
-        "price" : 15.0,
-        "category" : "Toys"
-      } ]
-    }, {
-      "id" : 1,
-      "lastName" : "Stoica",
-      "firstName" : "Tudor",
-      "city" : "Constanta",
-      "age" : 2,
-      "giftsPreferences" : [ "Sweets", "Board Games", "Technology", "Toys" ],
-      "averageScore" : 10.0,
-      "niceScoreHistory" : [ 4.0 ],
-      "assignedBudget" : 106.57894736842107,
-      "receivedGifts" : [ {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
-        "category" : "Sweets"
-      }, {
-        "productName" : "Uno",
-        "price" : 10.0,
-        "category" : "Board Games"
-      }, {
-        "productName" : "Castle",
-        "price" : 15.0,
-        "category" : "Toys"
-      } ]
-    }, {
-      "id" : 2,
-      "lastName" : "Ionescu",
-      "firstName" : "Miruna",
-      "city" : "Brasov",
-      "age" : 8,
-      "giftsPreferences" : [ "Board Games" ],
-      "averageScore" : 7.7,
-      "niceScoreHistory" : [ 7.0 ],
-      "assignedBudget" : 82.06578947368422,
-      "receivedGifts" : [ {
-        "productName" : "Uno",
-        "price" : 10.0,
-        "category" : "Board Games"
-      } ]
-    }, {
-      "id" : 3,
-      "lastName" : "Pop",
-      "firstName" : "Maria",
-      "city" : "Iasi",
+      "lastName" : "Cantemir",
+      "firstName" : "Andreea",
+      "city" : "Oradea",
       "age" : 13,
-      "giftsPreferences" : [ "Sweets", "Clothes" ],
-      "averageScore" : 3.4,
-      "niceScoreHistory" : [ 2.0 ],
-      "assignedBudget" : 67.296992481203,
-      "receivedGifts" : [ {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
-        "category" : "Sweets"
-      }, {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
-      } ]
-    } ]
-  }, {
-    "children" : [ {
-      "id" : 0,
-      "lastName" : "Popa",
-      "firstName" : "Diana",
-      "city" : "Craiova",
-      "age" : 17,
-      "giftsPreferences" : [ "Clothes", "Board Games", "Toys", "Technology" ],
+      "giftsPreferences" : [ "Technology", "Clothes", "Books" ],
       "averageScore" : 5.5,
       "niceScoreHistory" : [ 5.0 ],
-      "assignedBudget" : 141.5740740740741,
-      "receivedGifts" : [ {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
-      }, {
-        "productName" : "Uno",
-        "price" : 10.0,
-        "category" : "Board Games"
-      }, {
-        "productName" : "Castle",
-        "price" : 15.0,
-        "category" : "Toys"
-      } ]
-    }, {
-      "id" : 1,
-      "lastName" : "Stoica",
-      "firstName" : "Tudor",
-      "city" : "Constanta",
-      "age" : 3,
-      "giftsPreferences" : [ "Sweets", "Board Games", "Technology", "Toys" ],
-      "averageScore" : 10.0,
-      "niceScoreHistory" : [ 4.0, 10.0 ],
-      "assignedBudget" : 257.40740740740745,
-      "receivedGifts" : [ {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
-        "category" : "Sweets"
-      }, {
-        "productName" : "Puzzle",
-        "price" : 50.0,
-        "category" : "Board Games"
-      }, {
-        "productName" : "Headphones",
-        "price" : 100.0,
-        "category" : "Technology"
-      }, {
-        "productName" : "Castle",
-        "price" : 15.0,
-        "category" : "Toys"
-      } ]
-    }, {
-      "id" : 2,
-      "lastName" : "Ionescu",
-      "firstName" : "Miruna",
-      "city" : "Brasov",
-      "age" : 9,
-      "giftsPreferences" : [ "Board Games" ],
-      "averageScore" : 5.5,
-      "niceScoreHistory" : [ 7.0, 3.0 ],
-      "assignedBudget" : 141.5740740740741,
-      "receivedGifts" : [ {
-        "productName" : "Puzzle",
-        "price" : 50.0,
-        "category" : "Board Games"
-      } ]
-    }, {
-      "id" : 3,
-      "lastName" : "Pop",
-      "firstName" : "Maria",
-      "city" : "Iasi",
-      "age" : 14,
-      "giftsPreferences" : [ "Sweets", "Clothes" ],
-      "averageScore" : 6.8,
-      "niceScoreHistory" : [ 2.0, 5.0 ],
-      "assignedBudget" : 175.03703703703707,
-      "receivedGifts" : [ {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
-        "category" : "Sweets"
-      }, {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
-      } ]
-    }, {
-      "id" : 4,
-      "lastName" : "Pop",
-      "firstName" : "Maria",
-      "city" : "Brasov",
-      "age" : 2,
-      "giftsPreferences" : [ "Technology", "Board Games", "Sweets" ],
-      "averageScore" : 10.0,
-      "niceScoreHistory" : [ 8.0 ],
-      "assignedBudget" : 257.40740740740745,
+      "assignedBudget" : 255.044061302682,
       "receivedGifts" : [ {
         "productName" : "Headphones",
         "price" : 100.0,
         "category" : "Technology"
       }, {
-        "productName" : "Puzzle",
-        "price" : 50.0,
-        "category" : "Board Games"
+        "productName" : "Dress",
+        "price" : 45.0,
+        "category" : "Clothes"
       }, {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
-        "category" : "Sweets"
-      } ]
-    } ]
-  }, {
-    "children" : [ {
-      "id" : 0,
-      "lastName" : "Popa",
-      "firstName" : "Diana",
-      "city" : "Craiova",
-      "age" : 18,
-      "giftsPreferences" : [ "Board Games", "Clothes", "Toys", "Technology" ],
-      "averageScore" : 5.5,
-      "niceScoreHistory" : [ 5.0 ],
-      "assignedBudget" : 60.888433981576256,
-      "receivedGifts" : [ {
-        "productName" : "Puzzle",
-        "price" : 50.0,
-        "category" : "Board Games"
-      } ]
-    }, {
-      "id" : 1,
-      "lastName" : "Stoica",
-      "firstName" : "Tudor",
-      "city" : "Constanta",
-      "age" : 4,
-      "giftsPreferences" : [ "Sweets", "Board Games", "Toys", "Technology" ],
-      "averageScore" : 10.0,
-      "niceScoreHistory" : [ 4.0, 10.0 ],
-      "assignedBudget" : 110.70624360286592,
-      "receivedGifts" : [ {
-        "productName" : "Bag of Candy",
-        "price" : 20.0,
-        "category" : "Sweets"
-      }, {
-        "productName" : "Puzzle",
-        "price" : 50.0,
-        "category" : "Board Games"
-      }, {
-        "productName" : "Castle",
-        "price" : 15.0,
-        "category" : "Toys"
-      } ]
-    }, {
-      "id" : 2,
-      "lastName" : "Ionescu",
-      "firstName" : "Miruna",
-      "city" : "Brasov",
-      "age" : 10,
-      "giftsPreferences" : [ "Sweets", "Board Games", "Toys" ],
-      "averageScore" : 5.5,
-      "niceScoreHistory" : [ 7.0, 3.0 ],
-      "assignedBudget" : 46.83725690890481,
-      "receivedGifts" : [ {
-        "productName" : "Bag of Candy",
-        "price" : 20.0,
-        "category" : "Sweets"
-      }, {
-        "productName" : "Car",
-        "price" : 20.0,
-        "category" : "Toys"
-      } ]
-    }, {
-      "id" : 3,
-      "lastName" : "Pop",
-      "firstName" : "Maria",
-      "city" : "Iasi",
-      "age" : 15,
-      "giftsPreferences" : [ "Sweets", "Clothes" ],
-      "averageScore" : 4.25,
-      "niceScoreHistory" : [ 2.0, 5.0, 1.0 ],
-      "assignedBudget" : 36.19242579324463,
-      "receivedGifts" : [ ]
-    }, {
-      "id" : 4,
-      "lastName" : "Pop",
-      "firstName" : "Maria",
-      "city" : "Brasov",
-      "age" : 3,
-      "giftsPreferences" : [ "Technology", "Board Games", "Sweets" ],
-      "averageScore" : 10.0,
-      "niceScoreHistory" : [ 8.0, 2.0 ],
-      "assignedBudget" : 59.61105424769704,
-      "receivedGifts" : [ {
-        "productName" : "Puzzle",
-        "price" : 50.0,
-        "category" : "Board Games"
-      } ]
-    }, {
-      "id" : 5,
-      "lastName" : "Popescu",
-      "firstName" : "Tudor",
-      "city" : "Bucuresti",
-      "age" : 6,
-      "giftsPreferences" : [ "Technology", "Board Games", "Sweets" ],
-      "averageScore" : 3.6,
-      "niceScoreHistory" : [ 2.0 ],
-      "assignedBudget" : 21.459979529170933,
-      "receivedGifts" : [ ]
-    }, {
-      "id" : 6,
-      "lastName" : "Ionescu",
-      "firstName" : "Maria",
-      "city" : "Iasi",
-      "age" : 14,
-      "giftsPreferences" : [ "Technology", "Sweets", "Books" ],
-      "averageScore" : 10.0,
-      "niceScoreHistory" : [ 7.0 ],
-      "assignedBudget" : 85.15864892528148,
-      "receivedGifts" : [ {
-        "productName" : "Twilight",
-        "price" : 30.0,
-        "category" : "Books"
-      } ]
-    } ]
-  }, {
-    "children" : [ {
-      "id" : 1,
-      "lastName" : "Stoica",
-      "firstName" : "Tudor",
-      "city" : "Constanta",
-      "age" : 5,
-      "giftsPreferences" : [ "Books", "Board Games", "Sweets", "Toys", "Technology" ],
-      "averageScore" : 10.0,
-      "niceScoreHistory" : [ 4.0, 10.0 ],
-      "assignedBudget" : 71.38240996416191,
-      "receivedGifts" : [ {
-        "productName" : "Twilight",
-        "price" : 30.0,
-        "category" : "Books"
-      }, {
-        "productName" : "Car",
-        "price" : 20.0,
-        "category" : "Toys"
-      } ]
-    }, {
-      "id" : 2,
-      "lastName" : "Ionescu",
-      "firstName" : "Miruna",
-      "city" : "Brasov",
-      "age" : 11,
-      "giftsPreferences" : [ "Sweets", "Board Games", "Toys" ],
-      "averageScore" : 3.666666666666667,
-      "niceScoreHistory" : [ 7.0, 3.0, 0.0 ],
-      "assignedBudget" : 26.173550320192703,
-      "receivedGifts" : [ {
-        "productName" : "Bike",
+        "productName" : "Diary of a Wimpy Kid",
         "price" : 25.0,
-        "category" : "Toys"
-      } ]
-    }, {
-      "id" : 3,
-      "lastName" : "Pop",
-      "firstName" : "Maria",
-      "city" : "Iasi",
-      "age" : 16,
-      "giftsPreferences" : [ "Technology", "Sweets", "Clothes" ],
-      "averageScore" : 5.27,
-      "niceScoreHistory" : [ 2.0, 5.0, 1.0, 4.0 ],
-      "assignedBudget" : 26.33297103577933,
-      "receivedGifts" : [ ]
-    }, {
-      "id" : 4,
-      "lastName" : "Pop",
-      "firstName" : "Maria",
-      "city" : "Brasov",
-      "age" : 4,
-      "giftsPreferences" : [ "Sweets", "Board Games", "Technology" ],
-      "averageScore" : 10.0,
-      "niceScoreHistory" : [ 8.0, 2.0 ],
-      "assignedBudget" : 92.79713295341048,
-      "receivedGifts" : [ {
-        "productName" : "Puzzle",
-        "price" : 50.0,
-        "category" : "Board Games"
-      } ]
-    }, {
-      "id" : 5,
-      "lastName" : "Popescu",
-      "firstName" : "Tudor",
-      "city" : "Bucuresti",
-      "age" : 7,
-      "giftsPreferences" : [ "Books", "Technology", "Board Games", "Sweets" ],
-      "averageScore" : 3.6,
-      "niceScoreHistory" : [ 2.0 ],
-      "assignedBudget" : 25.697667587098287,
-      "receivedGifts" : [ ]
-    }, {
-      "id" : 6,
-      "lastName" : "Ionescu",
-      "firstName" : "Maria",
-      "city" : "Iasi",
-      "age" : 15,
-      "giftsPreferences" : [ "Toys", "Technology", "Sweets", "Books" ],
-      "averageScore" : 10.0,
-      "niceScoreHistory" : [ 7.0 ],
-      "assignedBudget" : 71.38240996416191,
-      "receivedGifts" : [ {
-        "productName" : "Car",
-        "price" : 20.0,
-        "category" : "Toys"
-      }, {
-        "productName" : "Twilight",
-        "price" : 30.0,
         "category" : "Books"
       } ]
     }, {
-      "id" : 7,
-      "lastName" : "Popescu",
-      "firstName" : "Tudor",
-      "city" : "Craiova",
-      "age" : 4,
-      "giftsPreferences" : [ "Sweets", "Toys" ],
-      "averageScore" : 10.0,
-      "niceScoreHistory" : [ 3.0 ],
-      "assignedBudget" : 71.38240996416191,
-      "receivedGifts" : [ {
-        "productName" : "Car",
-        "price" : 20.0,
-        "category" : "Toys"
-      } ]
-    }, {
-      "id" : 8,
-      "lastName" : "Pop",
+      "id" : 1,
+      "lastName" : "Ionescu",
       "firstName" : "Matei",
       "city" : "Craiova",
-      "age" : 6,
-      "giftsPreferences" : [ "Technology", "Clothes" ],
-      "averageScore" : 4.2,
-      "niceScoreHistory" : [ 3.0 ],
-      "assignedBudget" : 20.986428529463602,
-      "receivedGifts" : [ ]
-    } ]
-  }, {
-    "children" : [ {
-      "id" : 1,
-      "lastName" : "Stoica",
-      "firstName" : "Tudor",
-      "city" : "Constanta",
-      "age" : 6,
-      "giftsPreferences" : [ "Technology", "Toys", "Books", "Board Games", "Sweets" ],
-      "averageScore" : 10.0,
-      "niceScoreHistory" : [ 4.0, 10.0 ],
-      "assignedBudget" : 33.62493165664298,
+      "age" : 15,
+      "giftsPreferences" : [ "Toys", "Board Games" ],
+      "averageScore" : 7.8,
+      "niceScoreHistory" : [ 6.0 ],
+      "assignedBudget" : 671.7264367816092,
       "receivedGifts" : [ {
-        "productName" : "Bike",
-        "price" : 25.0,
+        "productName" : "Doll",
+        "price" : 10.0,
         "category" : "Toys"
+      }, {
+        "productName" : "Monopoly",
+        "price" : 30.0,
+        "category" : "Board Games"
       } ]
     }, {
       "id" : 2,
-      "lastName" : "Ionescu",
-      "firstName" : "Miruna",
+      "lastName" : "Popescu",
+      "firstName" : "Mihai",
+      "city" : "Craiova",
+      "age" : 10,
+      "giftsPreferences" : [ "Technology", "Clothes", "Books" ],
+      "averageScore" : 2.8,
+      "niceScoreHistory" : [ 2.0 ],
+      "assignedBudget" : 241.13256704980842,
+      "receivedGifts" : [ {
+        "productName" : "Headphones",
+        "price" : 100.0,
+        "category" : "Technology"
+      }, {
+        "productName" : "Dress",
+        "price" : 45.0,
+        "category" : "Clothes"
+      }, {
+        "productName" : "Harry Potter",
+        "price" : 35.0,
+        "category" : "Books"
+      } ]
+    }, {
+      "id" : 3,
+      "lastName" : "Popescu",
+      "firstName" : "Matei",
       "city" : "Brasov",
       "age" : 12,
-      "giftsPreferences" : [ "Sweets", "Board Games", "Toys" ],
-      "averageScore" : 2.31,
-      "niceScoreHistory" : [ 7.0, 3.0, 0.0, 2.0 ],
-      "assignedBudget" : 7.767359212684528,
-      "receivedGifts" : [ ]
-    }, {
-      "id" : 3,
-      "lastName" : "Pop",
-      "firstName" : "Maria",
-      "city" : "Iasi",
-      "age" : 17,
-      "giftsPreferences" : [ "Technology", "Sweets", "Clothes" ],
-      "averageScore" : 3.5133333333333336,
-      "niceScoreHistory" : [ 2.0, 5.0, 1.0, 4.0, 0.0 ],
-      "assignedBudget" : 11.8135593220339,
-      "receivedGifts" : [ ]
-    }, {
-      "id" : 4,
-      "lastName" : "Pop",
-      "firstName" : "Maria",
-      "city" : "Brasov",
-      "age" : 5,
-      "giftsPreferences" : [ "Sweets", "Toys", "Board Games", "Technology" ],
-      "averageScore" : 5.0,
-      "niceScoreHistory" : [ 8.0, 2.0, 0.0 ],
-      "assignedBudget" : 16.81246582832149,
-      "receivedGifts" : [ ]
-    }, {
-      "id" : 5,
-      "lastName" : "Popescu",
-      "firstName" : "Tudor",
-      "city" : "Bucuresti",
-      "age" : 8,
-      "giftsPreferences" : [ "Technology", "Sweets", "Books", "Board Games" ],
-      "averageScore" : 3.6,
-      "niceScoreHistory" : [ 2.0 ],
-      "assignedBudget" : 12.104975396391472,
+      "giftsPreferences" : [ "Technology", "Books", "Board Games" ],
+      "averageScore" : 10.0,
+      "niceScoreHistory" : [ 9.0 ],
+      "assignedBudget" : 861.1877394636016,
+      "receivedGifts" : [ {
+        "productName" : "Headphones",
+        "price" : 100.0,
+        "category" : "Technology"
+      }, {
+        "productName" : "Harry Potter",
+        "price" : 35.0,
+        "category" : "Books"
+      }, {
+        "productName" : "Monopoly",
+        "price" : 30.0,
+        "category" : "Board Games"
+      } ]
+    } ]
+  }, {
+    "children" : [ {
+      "id" : 0,
+      "lastName" : "Cantemir",
+      "firstName" : "Andreea",
+      "city" : "Oradea",
+      "age" : 14,
+      "giftsPreferences" : [ "Technology", "Clothes", "Books" ],
+      "averageScore" : 4.766666666666667,
+      "niceScoreHistory" : [ 5.0, 4.0 ],
+      "assignedBudget" : 18.50076103500761,
       "receivedGifts" : [ {
         "productName" : "Headphones",
         "price" : 100.0,
         "category" : "Technology"
       } ]
     }, {
-      "id" : 6,
+      "id" : 1,
       "lastName" : "Ionescu",
-      "firstName" : "Maria",
-      "city" : "Iasi",
-      "age" : 16,
-      "giftsPreferences" : [ "Board Games", "Toys", "Technology", "Sweets", "Books" ],
-      "averageScore" : 10.0,
-      "niceScoreHistory" : [ 7.0 ],
-      "assignedBudget" : 33.62493165664298,
-      "receivedGifts" : [ {
-        "productName" : "Bike",
-        "price" : 25.0,
-        "category" : "Toys"
-      } ]
-    }, {
-      "id" : 7,
-      "lastName" : "Popescu",
-      "firstName" : "Tudor",
-      "city" : "Craiova",
-      "age" : 5,
-      "giftsPreferences" : [ "Sweets", "Toys" ],
-      "averageScore" : 6.75,
-      "niceScoreHistory" : [ 3.0, 6.0 ],
-      "assignedBudget" : 29.50587752870421,
-      "receivedGifts" : [ {
-        "productName" : "Bike",
-        "price" : 25.0,
-        "category" : "Toys"
-      } ]
-    }, {
-      "id" : 8,
-      "lastName" : "Pop",
       "firstName" : "Matei",
       "city" : "Craiova",
-      "age" : 7,
-      "giftsPreferences" : [ "Sweets", "Toys", "Books", "Technology", "Clothes" ],
-      "averageScore" : 4.2,
-      "niceScoreHistory" : [ 3.0 ],
-      "assignedBudget" : 18.359212684527066,
+      "age" : 16,
+      "giftsPreferences" : [ "Technology", "Toys", "Board Games" ],
+      "averageScore" : 6.933333333333334,
+      "niceScoreHistory" : [ 6.0, 5.0 ],
+      "assignedBudget" : 26.91019786910198,
+      "receivedGifts" : [ {
+        "productName" : "Doll",
+        "price" : 10.0,
+        "category" : "Toys"
+      } ]
+    }, {
+      "id" : 2,
+      "lastName" : "Popescu",
+      "firstName" : "Mihai",
+      "city" : "Craiova",
+      "age" : 11,
+      "giftsPreferences" : [ "Technology", "Clothes", "Board Games", "Books" ],
+      "averageScore" : 2.1,
+      "niceScoreHistory" : [ 2.0, 1.0 ],
+      "assignedBudget" : 5.705479452054796,
       "receivedGifts" : [ ]
     }, {
-      "id" : 9,
+      "id" : 3,
+      "lastName" : "Popescu",
+      "firstName" : "Matei",
+      "city" : "Brasov",
+      "age" : 13,
+      "giftsPreferences" : [ "Books", "Technology", "Board Games" ],
+      "averageScore" : 10.0,
+      "niceScoreHistory" : [ 9.0 ],
+      "assignedBudget" : 27.168949771689498,
+      "receivedGifts" : [ ]
+    }, {
+      "id" : 4,
       "lastName" : "Mihalache",
+      "firstName" : "Mihai",
+      "city" : "Bucuresti",
+      "age" : 15,
+      "giftsPreferences" : [ "Technology", "Board Games" ],
+      "averageScore" : 10.0,
+      "niceScoreHistory" : [ 9.0 ],
+      "assignedBudget" : 38.81278538812786,
+      "receivedGifts" : [ {
+        "productName" : "Monopoly",
+        "price" : 30.0,
+        "category" : "Board Games"
+      } ]
+    }, {
+      "id" : 5,
+      "lastName" : "Popescu",
       "firstName" : "Tudor",
+      "city" : "Braila",
+      "age" : 18,
+      "giftsPreferences" : [ "Technology", "Toys", "Books", "Board Games" ],
+      "averageScore" : 10.0,
+      "niceScoreHistory" : [ 9.0 ],
+      "assignedBudget" : 38.81278538812786,
+      "receivedGifts" : [ {
+        "productName" : "Doll",
+        "price" : 10.0,
+        "category" : "Toys"
+      } ]
+    } ]
+  }, {
+    "children" : [ {
+      "id" : 0,
+      "lastName" : "Cantemir",
+      "firstName" : "Andreea",
+      "city" : "Oradea",
+      "age" : 15,
+      "giftsPreferences" : [ "Technology", "Clothes", "Books", "Board Games" ],
+      "averageScore" : 2.933333333333333,
+      "niceScoreHistory" : [ 5.0, 4.0, 1.0 ],
+      "assignedBudget" : 196.22777777777776,
+      "receivedGifts" : [ {
+        "productName" : "Headphones",
+        "price" : 100.0,
+        "category" : "Technology"
+      }, {
+        "productName" : "Dress",
+        "price" : 45.0,
+        "category" : "Clothes"
+      }, {
+        "productName" : "Harry Potter",
+        "price" : 35.0,
+        "category" : "Books"
+      } ]
+    }, {
+      "id" : 1,
+      "lastName" : "Ionescu",
+      "firstName" : "Matei",
+      "city" : "Craiova",
+      "age" : 17,
+      "giftsPreferences" : [ "Books", "Technology", "Toys", "Board Games" ],
+      "averageScore" : 7.366666666666667,
+      "niceScoreHistory" : [ 6.0, 5.0, 6.0 ],
+      "assignedBudget" : 492.7993055555555,
+      "receivedGifts" : [ {
+        "productName" : "Harry Potter",
+        "price" : 35.0,
+        "category" : "Books"
+      }, {
+        "productName" : "Headphones",
+        "price" : 100.0,
+        "category" : "Technology"
+      }, {
+        "productName" : "Bike",
+        "price" : 25.0,
+        "category" : "Toys"
+      }, {
+        "productName" : "Monopoly",
+        "price" : 30.0,
+        "category" : "Board Games"
+      } ]
+    }, {
+      "id" : 2,
+      "lastName" : "Popescu",
+      "firstName" : "Mihai",
+      "city" : "Craiova",
+      "age" : 12,
+      "giftsPreferences" : [ "Technology", "Clothes", "Board Games", "Books" ],
+      "averageScore" : 4.433333333333334,
+      "niceScoreHistory" : [ 2.0, 1.0, 5.0 ],
+      "assignedBudget" : 228.13194444444443,
+      "receivedGifts" : [ {
+        "productName" : "Headphones",
+        "price" : 100.0,
+        "category" : "Technology"
+      }, {
+        "productName" : "Dress",
+        "price" : 45.0,
+        "category" : "Clothes"
+      }, {
+        "productName" : "Monopoly",
+        "price" : 30.0,
+        "category" : "Board Games"
+      } ]
+    }, {
+      "id" : 3,
+      "lastName" : "Popescu",
+      "firstName" : "Matei",
+      "city" : "Brasov",
+      "age" : 14,
+      "giftsPreferences" : [ "Books", "Technology", "Board Games" ],
+      "averageScore" : 8.866666666666667,
+      "niceScoreHistory" : [ 9.0, 5.0 ],
+      "assignedBudget" : 456.26388888888886,
+      "receivedGifts" : [ {
+        "productName" : "Headphones",
+        "price" : 100.0,
+        "category" : "Technology"
+      }, {
+        "productName" : "Puzzle",
+        "price" : 50.0,
+        "category" : "Board Games"
+      } ]
+    }, {
+      "id" : 4,
+      "lastName" : "Mihalache",
+      "firstName" : "Mihai",
+      "city" : "Bucuresti",
+      "age" : 16,
+      "giftsPreferences" : [ "Technology", "Books", "Board Games" ],
+      "averageScore" : 10.0,
+      "niceScoreHistory" : [ 9.0 ],
+      "assignedBudget" : 360.20833333333326,
+      "receivedGifts" : [ {
+        "productName" : "Puzzle",
+        "price" : 50.0,
+        "category" : "Board Games"
+      } ]
+    } ]
+  }, {
+    "children" : [ {
+      "id" : 0,
+      "lastName" : "Cantemir",
+      "firstName" : "Andreea",
       "city" : "Oradea",
       "age" : 16,
-      "giftsPreferences" : [ "Sweets", "Toys", "Books" ],
-      "averageScore" : 3.4,
-      "niceScoreHistory" : [ 2.0 ],
-      "assignedBudget" : 8.002733734281028,
-      "receivedGifts" : [ ]
+      "giftsPreferences" : [ "Toys", "Books", "Technology", "Clothes", "Board Games" ],
+      "averageScore" : 2.933333333333333,
+      "niceScoreHistory" : [ 5.0, 4.0, 1.0 ],
+      "assignedBudget" : 32.66538777747327,
+      "receivedGifts" : [ {
+        "productName" : "Bike",
+        "price" : 25.0,
+        "category" : "Toys"
+      } ]
+    }, {
+      "id" : 1,
+      "lastName" : "Ionescu",
+      "firstName" : "Matei",
+      "city" : "Craiova",
+      "age" : 18,
+      "giftsPreferences" : [ "Toys", "Board Games", "Books", "Technology" ],
+      "averageScore" : 8.58,
+      "niceScoreHistory" : [ 6.0, 5.0, 6.0, 8.0 ],
+      "assignedBudget" : 136.4946560701562,
+      "receivedGifts" : [ {
+        "productName" : "Bike",
+        "price" : 25.0,
+        "category" : "Toys"
+      }, {
+        "productName" : "Puzzle",
+        "price" : 50.0,
+        "category" : "Board Games"
+      } ]
+    }, {
+      "id" : 2,
+      "lastName" : "Popescu",
+      "firstName" : "Mihai",
+      "city" : "Craiova",
+      "age" : 13,
+      "giftsPreferences" : [ "Technology", "Toys", "Books", "Board Games", "Clothes" ],
+      "averageScore" : 7.14,
+      "niceScoreHistory" : [ 2.0, 1.0, 5.0, 8.0 ],
+      "assignedBudget" : 113.58646204439572,
+      "receivedGifts" : [ {
+        "productName" : "Bike",
+        "price" : 25.0,
+        "category" : "Toys"
+      }, {
+        "productName" : "Puzzle",
+        "price" : 50.0,
+        "category" : "Board Games"
+      } ]
+    }, {
+      "id" : 3,
+      "lastName" : "Popescu",
+      "firstName" : "Matei",
+      "city" : "Brasov",
+      "age" : 15,
+      "giftsPreferences" : [ "Books", "Technology", "Board Games" ],
+      "averageScore" : 10.0,
+      "niceScoreHistory" : [ 9.0, 5.0, 9.0 ],
+      "assignedBudget" : 111.35927651411345,
+      "receivedGifts" : [ {
+        "productName" : "Puzzle",
+        "price" : 50.0,
+        "category" : "Board Games"
+      } ]
+    }, {
+      "id" : 4,
+      "lastName" : "Mihalache",
+      "firstName" : "Mihai",
+      "city" : "Bucuresti",
+      "age" : 17,
+      "giftsPreferences" : [ "Technology", "Books", "Board Games" ],
+      "averageScore" : 10.0,
+      "niceScoreHistory" : [ 9.0, 3.0 ],
+      "assignedBudget" : 159.08468073444777,
+      "receivedGifts" : [ {
+        "productName" : "Puzzle",
+        "price" : 50.0,
+        "category" : "Board Games"
+      } ]
+    }, {
+      "id" : 6,
+      "lastName" : "Pop",
+      "firstName" : "Alexandra",
+      "city" : "Braila",
+      "age" : 13,
+      "giftsPreferences" : [ "Technology", "Clothes", "Books", "Board Games" ],
+      "averageScore" : 10.0,
+      "niceScoreHistory" : [ 7.0 ],
+      "assignedBudget" : 206.8100849547821,
+      "receivedGifts" : [ {
+        "productName" : "Dress",
+        "price" : 45.0,
+        "category" : "Clothes"
+      }, {
+        "productName" : "Puzzle",
+        "price" : 50.0,
+        "category" : "Board Games"
+      } ]
     } ]
   } ]
 }

@@ -232,7 +232,7 @@ public final class UtilsProcess {
       Double childAssignedBudget = ch.getAssignedBudget();
       int hasReceived = 0;
       System.out.println();
-      System.out.println(ch.getLastName() + " " + ch.getFirstName());
+      System.out.println(ch.getLastName() + " " + ch.getFirstName() + " elf : " + ch.getElf() + " id : " + ch.getId());
       System.out.println();
       if (Double.compare(childAssignedBudget, 0.0) > 0) {
         for (String prefs : ch.getGiftsPreferences()) {
@@ -292,7 +292,12 @@ public final class UtilsProcess {
           Gift minGift = giftArray.get(0);
 
           if (minGift.getQuantity() != 0) {
+            int quantity = minGift.getQuantity();
+
             ch.getReceivedGifts().add(minGift);
+
+            quantity--;
+            minGift.setQuantity(quantity);
           }
         }
       }

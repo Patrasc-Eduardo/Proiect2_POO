@@ -24,7 +24,7 @@ public final class Test {
 //            Scanner scanner = new Scanner(System.in);
 //            String fileName = scanner.next();
 
-            String fileName = "test22.json";
+            String fileName = "test23.json";
             for (File file : inputDir) {
                 if (file.getName().equalsIgnoreCase(fileName)) {
                     Main.action(file.getAbsolutePath(), Constants.OUT_FILE);
