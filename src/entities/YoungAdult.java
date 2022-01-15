@@ -16,18 +16,4 @@ public final class YoungAdult extends Child {
     this.setNiceScoreBonus(ch.getNiceScoreBonus());
     this.setElf(ch.getElf());
   }
-
-//  @Override
-//  public void calculateAvgScore() {
-//    double avg = this.getAverageScore();
-//    if (Double.compare(this.getNiceScoreBonus(), 0.0) != 0) {
-//      avg += avg * this.getNiceScoreBonus() / 100;
-//    }
-//
-//    if (Double.compare(avg, 10.0) > 0) {
-//      avg = 10.0;
-//    }
-//
-//    this.setAverageScore(avg);
-//  }
 }

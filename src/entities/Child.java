@@ -1,5 +1,6 @@
 package entities;
 
+import common.Constants;
 import designpatterns.strategy.average.AverageScoreStrategy;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -36,7 +37,6 @@ public class Child implements AverageScoreStrategy {
     this.city = city;
     this.lastName = lastName;
     this.firstName = firstName;
-    // this.giftsPreferences = giftsPreferences;
     this.niceScore = niceScore;
     this.niceScoreHistory.add(niceScore);
     this.niceScoreBonus = niceScoreBonus;
@@ -91,21 +91,29 @@ public class Child implements AverageScoreStrategy {
     this.niceScoreBonus = child.niceScoreBonus;
   }
 
-  public Child() {}
+  public Child() { }
 
+  /**
+   */
   public Double getNiceScoreBonus() {
     return niceScoreBonus;
   }
 
-  public void setNiceScoreBonus(Double niceScoreBonus) {
+  /**
+   */
+  public void setNiceScoreBonus(final Double niceScoreBonus) {
     this.niceScoreBonus = niceScoreBonus;
   }
 
+  /**
+   */
   public String getElf() {
     return elf;
   }
 
-  public void setElf(String elf) {
+  /**
+   */
+  public void setElf(final String elf) {
     this.elf = elf;
   }
 
@@ -198,9 +206,9 @@ public class Child implements AverageScoreStrategy {
   }
 
   /**
-   * Calculeaza bugetul asignat.
+   * Calculeaza bugetul asignat unui copil.
    *
-   * @param budgetUnit
+   * @param budgetUnit bugetul asignat (de santa) pentru fiecare copil.
    */
   public void calculateAssignedBudget(final Double budgetUnit) {
 
@@ -211,18 +219,23 @@ public class Child implements AverageScoreStrategy {
     if (elf != null) {
 
       if (elf.compareTo("black") == 0) {
-        assignedBudget = assignedBudget - assignedBudget * 30.0 / 100.0;
+        assignedBudget = assignedBudget - assignedBudget * Constants.THIRTY / Constants.HUNDRED;
+        // constants used for coding style
       }
 
       if (elf.compareTo("pink") == 0) {
-        assignedBudget = assignedBudget + assignedBudget * 30.0 / 100.0;
+        assignedBudget = assignedBudget + assignedBudget * Constants.THIRTY / Constants.HUNDRED;
       }
     }
   }
 
   @Override
-  public void calculateAvgScore() {}
+  public void calculateAvgScore() {
+  }
 
+  /**
+   * @return
+   */
   @Override
   public String toString() {
     return "Child{"

@@ -56,7 +56,6 @@ public final class InputLoader {
 
       if (jsonChildArray != null) {
         for (Object jsonChild : jsonChildArray) {
-          // assert false;
           try {
             initData
                 .getChildren()
@@ -74,22 +73,6 @@ public final class InputLoader {
                             (Long) ((JSONObject) jsonChild).get(Constants.NICE_SCORE_BONUS))),
                         ((String) ((JSONObject) jsonChild).get(Constants.ELF))));
           } catch (NullPointerException ignored) {
-
-            initData
-                .getChildren()
-                .add(
-                    new Child(
-                        (Math.toIntExact((Long) ((JSONObject) jsonChild).get(Constants.ID))),
-                        ((String) ((JSONObject) jsonChild).get(Constants.LAST_NAME)),
-                        ((String) ((JSONObject) jsonChild).get(Constants.FIRST_NAME)),
-                        (Math.toIntExact((Long) ((JSONObject) jsonChild).get(Constants.AGE))),
-                        ((String) ((JSONObject) jsonChild).get(Constants.CITY)),
-                        null,
-                        Utils.convertJSONArrayString(
-                            (JSONArray) ((JSONObject) jsonChild).get(Constants.GIFTS_PREFERENCES)),
-                        (Double.valueOf(
-                            (Long) ((JSONObject) jsonChild).get(Constants.NICE_SCORE_BONUS))),
-                        ((String) ((JSONObject) jsonChild).get(Constants.ELF))));
           }
         }
       } else {
@@ -137,12 +120,6 @@ public final class InputLoader {
                         ((String) ((JSONObject) gifts).get(Constants.CATEGORY)),
                         Math.toIntExact((Long) ((JSONObject) gifts).get(Constants.QUANTITY))));
               } catch (NullPointerException ignored) {
-                newGifts.add(
-                    new Gift(
-                        ((String) ((JSONObject) gifts).get(Constants.PRODUCT_NAME)),
-                        null,
-                        ((String) ((JSONObject) gifts).get(Constants.CATEGORY)),
-                        Math.toIntExact((Long) ((JSONObject) gifts).get(Constants.QUANTITY))));
               }
             }
           }
@@ -195,11 +172,9 @@ public final class InputLoader {
       } else {
         System.out.println("NU EXISTA SCHIMBARI ANUALE");
       }
-
     } catch (ParseException | IOException e) {
       e.printStackTrace();
     }
-
     return new ActionData(numberOfYears, santaBudget, initData, annualChanges);
   }
 }

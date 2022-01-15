@@ -51,7 +51,6 @@ public final class ChildFactory {
     }
     if (isBetween(age, ADULT_LOWER_LIMIT, ADULT_UPPER_LIMIT)) {
       return new YoungAdult(ch);
-      //return null;
     }
 
     throw new IllegalArgumentException("The child age " + age + " is not recognized.");

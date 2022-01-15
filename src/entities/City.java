@@ -2,7 +2,7 @@ package entities;
 
 import java.util.ArrayList;
 
-public class City {
+public final class City {
   private final String name;
   private Double averageScore;
 
@@ -11,7 +11,11 @@ public class City {
     this.averageScore = averageScore;
   }
 
-  public void calculateAvgScore(ArrayList<Child> childList) {
+  /**
+   * Calculeaza scorul average pentru oras.
+   * @param childList lista de copii in care vom cauta orasul respectiv
+   */
+  public void calculateAvgScore(final ArrayList<Child> childList) {
     double sum = 0.0;
     double nr = 0.0;
 
@@ -24,7 +28,6 @@ public class City {
         }
       }
     }
-
     if (Double.compare(sum, 0.0) != 0 && Double.compare(nr, 0.0) != 0) {
       this.averageScore = (sum / nr);
     } else {
@@ -40,7 +43,7 @@ public class City {
     return averageScore;
   }
 
-  public void setAverageScore(Double averageScore) {
+  public void setAverageScore(final Double averageScore) {
     this.averageScore = averageScore;
   }
 }

@@ -125,7 +125,7 @@ public class Checker {
     }
 
     /**
-     * @param directory
+     * @param directory directory of files
      */
     public static void deleteFiles(final File[] directory) {
         if (directory != null) {

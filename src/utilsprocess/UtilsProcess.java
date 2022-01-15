@@ -18,7 +18,7 @@ public final class UtilsProcess {
   /** Pentru checkstyle */
   public static final int ADULT_AGE = 18;
 
-  private UtilsProcess() {}
+  private UtilsProcess() { }
 
   /**
    * Elimina copiii cu varsta de peste 18 ani.
@@ -210,9 +210,9 @@ public final class UtilsProcess {
     for (Child ch : mainDB.getChildrenList()) {
       firstRoundChildren.add(new Child(ch));
     }
-    //System.out.println("FINAL &&&&&&& " + firstRoundChildren);
+
     anOutput.getChildren().addAll(firstRoundChildren);
-    //System.out.println("FINAL &&&&&&&  AN OUTPUT" + anOutput);
+
     output.getAnnualChildren().add(anOutput);
   }
 
@@ -226,25 +226,23 @@ public final class UtilsProcess {
       final MainDB mainDB, final ArrayList<Child> childrenList, Double santaBudget) {
     HashMap<String, ArrayList<Gift>> santaGiftMap = mainDB.getSanta().giftListToMap();
     ArrayList<Gift> arr;
-    //System.out.println("Send gifts from UTILS");
+
     for (Child ch : childrenList) {
-      //System.out.println("here 1");
+
       Double childAssignedBudget = ch.getAssignedBudget();
+
       int hasReceived = 0;
-      System.out.println();
-      System.out.println(ch.getLastName() + " " + ch.getFirstName() + " elf : " + ch.getElf() + " id : " + ch.getId());
-      System.out.println();
+
       if (Double.compare(childAssignedBudget, 0.0) > 0) {
         for (String prefs : ch.getGiftsPreferences()) {
 
           if (santaGiftMap.containsKey(prefs)) {
-            System.out.println("Category " + prefs);
+
             arr = santaGiftMap.get(prefs); // preia lista de cadouri dintr-o anumita categorie
 
             if (!arr.isEmpty()) {
 
               arr.sort((Comparator.comparing(Gift::getPrice)));
-              System.out.println("Gift arr " + arr + " and budget " + childAssignedBudget);
 
               Gift minGift = null;
 
@@ -254,17 +252,16 @@ public final class UtilsProcess {
                   break;
                 }
               }
-              //minGift = arr.get(0);
 
               if (minGift != null) {
                 int compAssignedBudget = Double.compare(minGift.getPrice(), childAssignedBudget);
                 int compsantaBudget = Double.compare(minGift.getPrice(), santaBudget);
 
-                if ((compAssignedBudget < 0 || compAssignedBudget == 0) &&
-                        (compsantaBudget < 0 || compsantaBudget == 0)) {
+                if ((compAssignedBudget < 0 || compAssignedBudget == 0)
+                    && (compsantaBudget < 0 || compsantaBudget == 0)) {
 
                   int giftQuantity = minGift.getQuantity();
-                  System.out.println("Received " + minGift.getProductName() + " and quantity -> " + minGift.getQuantity());
+
                   ch.getReceivedGifts().add(minGift); // primeste cadoul
 
                   childAssignedBudget -= minGift.getPrice();
@@ -302,8 +299,5 @@ public final class UtilsProcess {
         }
       }
     }
-    mainDB.getChildrenList().sort((Comparator.comparingInt(Child::getId))); // sortam dupa ID lista de copii
-    //System.out.println("FINAL %%%% CHILDREN %%%%%% " + childrenList);
-    //mainDB.setChildrenList(new ArrayList<>(childrenList));
   }
 }

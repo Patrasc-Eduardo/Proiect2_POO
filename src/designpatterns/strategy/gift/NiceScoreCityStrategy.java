@@ -4,32 +4,26 @@ import database.MainDB;
 import entities.Child;
 import entities.City;
 import utilsprocess.UtilsProcess;
-
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
-public class NiceScoreCityStrategy implements GiftStrategy {
+public final class NiceScoreCityStrategy implements GiftStrategy {
 
-  public NiceScoreCityStrategy() {}
+  public NiceScoreCityStrategy() {
 
+  }
+
+  /**
+   * Strategia de asignare a cadourilor in functie de nice score-ul oraselor
+   * @param mainDB baza de date principala
+   * @param santaBudget bugetul lui santa
+   * */
   @Override
-  public void sendGifts(MainDB mainDB, Double santaBudget) {
-    System.out.println("NICE SCORE CITY ");
+  public void sendGifts(final MainDB mainDB, final Double santaBudget) {
 
     HashMap<City, Double> map = mainDB.citiesToMap();
 
-    System.out.println("cities to map  " + map);
-
-//    ArrayList<City> citiesList = new ArrayList<>();
-//
-//    for (Map.Entry<City, Double> entry : map.entrySet()) {
-//      citiesList.add(entry.getKey());
-//    }
-
-      ArrayList<City> citiesList = mainDB.getCitiesList();
+    ArrayList<City> citiesList = mainDB.getCitiesList();
 
     citiesList.sort(
         (o1, o2) -> {
@@ -45,10 +39,6 @@ public class NiceScoreCityStrategy implements GiftStrategy {
 
     ArrayList<Child> childrenToVisit = new ArrayList<>();
 
-    for(City city : citiesList){
-        System.out.println("CITY " + city.getName() + " avg score " + city.getAverageScore());
-    }
-
     for (City city : citiesList) {
       for (Child ch : mainDB.getChildrenList()) {
         if (ch.getCity().compareTo(city.getName()) == 0) {
@@ -56,10 +46,6 @@ public class NiceScoreCityStrategy implements GiftStrategy {
         }
       }
     }
-
-    //System.out.println("CHILDREN TO VISIT " + childrenToVisit);
-      //System.out.println("cities to visit " + citiesList);
-    //System.out.println("children to visit " + childrenToVisit);
     UtilsProcess.sendGifts(mainDB, childrenToVisit, santaBudget);
   }
 }

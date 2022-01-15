@@ -37,11 +37,16 @@ public final class ChildUpdate {
 
   @Override
   public String toString() {
-    return "ChildUpdate{" +
-            "id=" + id +
-            ", niceScore=" + niceScore +
-            ", giftsPreferences=" + giftsPreferences +
-            ", elf='" + elf + '\'' +
-            '}';
+    return "ChildUpdate{"
+        + "id="
+        + id
+        + ", niceScore="
+        + niceScore
+        + ", giftsPreferences="
+        + giftsPreferences
+        + ", elf='"
+        + elf
+        + '\''
+        + '}';
   }
 }

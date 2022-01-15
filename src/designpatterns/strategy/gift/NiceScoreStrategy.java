@@ -3,19 +3,21 @@ package designpatterns.strategy.gift;
 import database.MainDB;
 import entities.Child;
 import utilsprocess.UtilsProcess;
-
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 
-public class NiceScoreStrategy implements GiftStrategy {
+public final class NiceScoreStrategy implements GiftStrategy {
 
-  public NiceScoreStrategy() {}
-
+  public NiceScoreStrategy() {
+  }
+    /**
+     * Strategia de asignare a cadourilor in functie de nice score-ul copiilor
+     * @param mainDB baza de date principala
+     * @param santaBudget bugetul lui santa
+     * */
   @Override
-  public void sendGifts(MainDB mainDB, Double santaBudget) {
+  public void sendGifts(final MainDB mainDB, final Double santaBudget) {
     HashMap<Child, Double> map = mainDB.childAvgMap();
 
     ArrayList<Child> childList = new ArrayList<>();

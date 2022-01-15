@@ -1,5 +1,7 @@
 package entities;
 
+import common.Constants;
+
 public final class Teen extends Child {
 
   public Teen(final Child ch) {
@@ -16,9 +18,7 @@ public final class Teen extends Child {
     this.setNiceScoreBonus(ch.getNiceScoreBonus());
     this.setElf(ch.getElf());
   }
-  /**
-   * Calculeaza average score ca o medie ponderata.
-   */
+  /** Calculeaza average score ca o medie ponderata. */
   @Override
   public void calculateAvgScore() {
     double nr = 0.0;
@@ -35,14 +35,14 @@ public final class Teen extends Child {
       this.setAverageScore(getNiceScore());
     }
 
-    double avg = (double) sum / nr;
-    System.out.println("************************** Nice score bonus = " + this.getNiceScoreBonus());
+    double avg = sum / nr;
+
     if (Double.compare(this.getNiceScoreBonus(), 0.0) != 0) {
-      avg += avg * this.getNiceScoreBonus() / 100;
+      avg += avg * this.getNiceScoreBonus() / Constants.HUNDRED; // for coding style
     }
 
-    if (Double.compare(avg, 10.0) > 0) {
-      avg = 10.0;
+    if (Double.compare(avg, Constants.TEN) > 0) {
+      avg = Constants.TEN;
     }
 
     this.setAverageScore(avg);

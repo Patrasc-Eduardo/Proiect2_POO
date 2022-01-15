@@ -1,5 +1,7 @@
 package entities;
 
+import common.Constants;
+
 public final class Kid extends Child {
 
   public Kid(final Child ch) {
@@ -31,14 +33,15 @@ public final class Kid extends Child {
     if (Double.compare(nr, 0.0) == 0 || Double.compare(sum, 0.0) == 0) {
       this.setAverageScore(getNiceScore());
     }
-    double avg = (double) sum / nr;
-    System.out.println("************************** Nice score bonus = " + this.getNiceScoreBonus());
+
+    double avg = sum / nr;
+
     if (Double.compare(this.getNiceScoreBonus(), 0.0) != 0) {
-      avg += avg * this.getNiceScoreBonus() / 100;
+      avg += avg * this.getNiceScoreBonus() / Constants.HUNDRED;
     }
 
-    if (Double.compare(avg, 10.0) > 0) {
-      avg = 10.0;
+    if (Double.compare(avg, Constants.TEN) > 0) {
+      avg = Constants.TEN;
     }
 
     this.setAverageScore(avg);
